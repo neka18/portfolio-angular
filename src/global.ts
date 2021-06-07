@@ -1,1 +1,1 @@
-export const SERVER_LOCATION = 'https://pavin.bes-webdeveloper-seraing.be/portfolio/';
+export const SERVER_LOCATION = 'https://pavin.bes-webdeveloper-seraing.be/portfolio/'; //connexion à l'api
