@@ -1,0 +1,37 @@
+<section>
+    <div class="containersection">
+        <div id="gridcontact">
+            <!-- grid de 2 colonnes avec à gauche du texte et un formulaire, à droite se trouve un map de google montrant ma rue -->
+            <div class='border '>
+                <p>Vous pouvez me contacter ci-dessous ou en laissant vos coordonnées ainsi que votre messages plus bas:</p>
+                <p class="bold"><a href="tel:0494437044"><fa-icon [icon]="phoneSquarerAltIcon"></fa-icon></a>0494/43.70.44</p>
+                <p class="bold"><a href="mailto:pavinlucas18@gmail.com"><fa-icon [icon]="mailBulkIcon"></fa-icon></a>pavinlucas18@gmail.com</p>
+
+                <!-- fomulaire: -->
+
+                <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contactForm">
+                    <label class="bold" for="name">Nom: </label><input class="radius" type="text" name="name" id="name" formControlName="name">  <br><br>
+                    <label class="bold" for="email">E-mail: </label><input class="radius" type="email" id="email" name="email" formControlName="email"> <br>
+                    <div *ngIf="contactForm.controls.email.invalid && (contactForm.controls.email.dirty || contactForm.controls.email.touched)"
+                        class="alert">
+                        <div *ngIf="contactForm.controls.email.errors?.email" class="invalid"><br>
+                           <p class="bold"> Email invalide !</p>
+                        </div>
+                    </div><br>
+                    <label class="bold" for="message">Message: </label><textarea class="radius" name="message" cols="26" rows="3" id="message" formControlName="message"></textarea> <br><br>
+                    <div *ngIf="sendmessage == true">
+                        <p class="sendmessage">Message envoyé!</p>
+                    </div>
+                    
+                    <input class="submit" type="submit" [disabled]="contactForm.invalid" value="Envoyer">
+                </form>
+            </div>
+
+            <div>
+                <!-- google map: -->
+                <iframe class='map'
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1261.989280650984!2d5.5971561836461525!3d50.75743119724382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0e58394ed6765%3A0x8aa51c568e0673d3!2sRue%20de%20la%20Montagne%2C%204690%20Bassenge!5e0!3m2!1sfr!2sbe!4v1616335828355!5m2!1sfr!2sbe"></iframe>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<body>
+    <main>
+        <section>
+            <div class="containersection">
+                <div id="gridservices">
+                    <ng-container  *ngFor= "let serv of service"> 
+                    <div>
+                        <p> <a href="https://fr.wikipedia.org/wiki/{{serv.nom}}"><span class='titleServices'>{{serv.nom}}:</span></a><br><br>{{serv.description}}</p>
+                    </div>
+                    <div>
+                        <img class='grayscale' src="{{server}}{{serv.image}}" alt="{{serv.nom}}">
+                    </div>
+                    </ng-container>
+                </div>
+            </div>
+        </section>        
+    </main>
+</body>
+

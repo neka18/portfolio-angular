@@ -1,0 +1,331 @@
+/*font-family: 'Open Sans', sans-serif;*/
+
+html,
+body,
+header,
+section,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundgray {
+    background-color: #999999;
+    padding: 100px 0px 0px 0px;
+}
+
+/*container de section de 1440px avec le relative*/
+
+.content {
+    position: relative;
+    width: 1440px;
+    margin: auto;
+
+}
+
+/*-----------HEADER-----------*/
+header {
+    height: 75px;
+    background: #3e3e3e;
+    position: relative;
+
+}
+
+/*parametrage du menu*/
+
+nav {
+    position: absolute;
+    left: 350px;
+    vertical-align: center;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    display: inline;
+    margin-left: 50px;
+    font-variant: small-caps;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #585858;
+    border-radius: 5px 5px;
+
+}
+
+/*affichage d'une petite barre sur page ouverte*/
+
+.current {
+    border-bottom: 3px #077687 solid;
+    padding-bottom: 5px;
+
+}
+
+/*-----------SECTION-----------*/
+
+/*taille de la section de chaque pages*/
+
+section {
+    height: 800px;
+
+}
+
+/*container de section de 1440px sans le relative*/
+
+.containersection {
+    width: 1440px;
+    margin: auto;
+}
+
+/****HOME***/
+
+/*mise en grid de la section home*/
+
+#gridhome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.imagehome {
+    width: 600px;
+    border: #ffffff 2px solid;
+    border-radius: 10px;
+}
+
+.frametext {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    width: 600px;
+    height: 350px;
+    background: #585858;
+    border: solid 2px #ffffff;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.titleframe {
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/***PRESENTATION***/
+
+/*mise en grid de la section presentaion*/
+
+#gridpresentation {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 20px;
+    margin-top: 100px;
+}
+
+.textpresentation {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    border: solid 2px #000000;
+    border-radius: 10px;
+    height: 400px;
+    margin-top: 0px;
+    background: #999999;
+    padding: 62px;
+
+}
+
+.imagepresentation {
+    width: 350px;
+    border: solid 2px #000000;
+    border-radius: 10px;
+}
+
+/***PORTFOLIO***/
+
+/*mise en grid de la section portfolio*/
+
+#gridportfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 600px;
+    grid-column-gap: 20px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+}
+
+.imageportfolio {
+    border-radius: 10px;
+}
+
+.textportfolio {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    border: #000000 2px solid;
+    border-radius: 20px;
+    margin: 30px 200px;
+    padding: 15px;
+}
+
+/***SERVICES***/
+
+/*mise en grid de la section services*/
+
+#gridservices {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    height: 800px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 25px;
+}
+
+#gridservices a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#gridservices a:hover {
+    text-decoration: underline 2px;
+}
+
+.titleservices {
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.titleservices:hover {
+    color: #077687;
+    text-decoration: underline;
+
+}
+
+/*grayscale est une petite animation sur mes images*/
+
+.grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.grayscale:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/***CONTACT***/
+
+/*mise en grid de la section contact*/
+
+#gridcontact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Open Sans', sans-serif;
+    column-gap: 80px;
+    margin-top: 100px;
+    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/*icone cliquable qui renvoie sur mon mail ou mon numéro*/
+
+.fa-phone-square-alt,
+.fa-mail-bulk {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 5px;
+    font-size: 50px;
+}
+
+.fa-phone-square-alt:hover,
+.fa-mail-bulk:hover {
+    color: #077687;
+}
+
+.border {
+    border: #000000 2px solid;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.radius {
+    padding: 5px 50px;
+    border: #000000 2px solid;
+    border-radius: 10px;
+}
+
+/*hover sur le bouton envoyer*/
+
+.submit {
+    background: #585858;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px 100px;
+}
+
+.submit:hover {
+    background-color: #077687;
+}
+
+/*modification sur la map google*/
+
+.map {
+    width: 600px;
+    height: 600px;
+    border: #000000 2px solid;
+    border-radius: 10px;
+}
+
+.invalid{
+    color: #ca0000;
+}
+
+.sendmessage{
+    color: #33ff00
+}
+
+/*-----------FOOTER-----------*/
+
+footer {
+    background: #3e3e3e;
+    height: 75px;
+    margin-top: 110px;
+}
+
+footer p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer p a:hover{
+    color: #077687;
+}

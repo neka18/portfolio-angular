@@ -1,0 +1,16 @@
+<header>
+    <!-- le content ici sert à ce que mon header et mon footer soit de 1440px et en relative-->
+    <div class="content">
+        <!-- menu simple de 5 li avec liens cliquable  -->
+        <nav>
+            <ul>
+                <li><a [routerLink]="'/'" routerLinkActive="current" [routerLinkActiveOptions]="{'exact': true}">Home</a></li>
+                <li><a [routerLink]="'/presentation'" routerLinkActive="current" [routerLinkActiveOptions]="{'exact': true}">About me</a></li>
+                <li><a [routerLink]="'/portfolio'" routerLinkActive="current" [routerLinkActiveOptions]="{'exact': true}">Portfolio</a></li>
+                <li><a [routerLink]="'/services'" routerLinkActive="current" [routerLinkActiveOptions]="{'exact': true}">services</a></li>
+                <li><a [routerLink]="'/contact'" routerLinkActive="current" [routerLinkActiveOptions]="{'exact': true}">contact</a></li>
+            </ul>
+
+        </nav>
+    </div>
+</header>

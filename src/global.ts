@@ -1,0 +1,1 @@
+export const SERVER_LOCATION = 'https://pavin.bes-webdeveloper-seraing.be/portfolio/';
