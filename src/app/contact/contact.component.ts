@@ -15,11 +15,11 @@ import { ContactService } from '../shared/contact-service/contact.service';
 
 export class ContactComponent implements OnInit {
 
-  phoneSquarerAltIcon = faPhoneSquareAlt;
+  phoneSquarerAltIcon = faPhoneSquareAlt; //fontawesome
   mailBulkIcon= faMailBulk;
   
-  contactForm!: FormGroup;
-  sendmessage = false;
+  contactForm!: FormGroup; 
+  sendmessage = false; //initialisation de la variable pour le message sur false
 
   constructor( private formBuilder: FormBuilder, private messageService: ContactService) { }
 

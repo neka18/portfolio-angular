@@ -11,10 +11,10 @@ import { SERVER_LOCATION } from 'src/global';
   export class ContactService{
   
     // on se connecte à l'api
-    private SERVER_URL = SERVER_LOCATION + 'api.php';
+    private SERVER_URL = SERVER_LOCATION + 'api.php'; //connexion à l'api
     
     // tslint:disable-next-line:variable-name
-    private httpHeaders = new HttpHeaders({
+    private httpHeaders = new HttpHeaders({ 
       'Content-Type':  'application/json',
       'Accept': 'application/json'
     });
