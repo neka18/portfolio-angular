@@ -20,7 +20,7 @@ export class RealisationService{
 
   constructor(private httpClient : HttpClient) { }
 
-  findAll(searchParams?: any): Observable<HttpResponse<Realisations[]>> {
+  findAll(searchParams?: any): Observable<HttpResponse<Realisations[]>> { //recherche les parametres de realisations
     return this.httpClient.get<Realisations[]>(this.SERVER_URL, {params: searchParams, headers: this.httpHeaders, observe: 'response'});
   }
 

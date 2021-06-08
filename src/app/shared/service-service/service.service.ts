@@ -21,7 +21,7 @@ export class ServicesService{
 
   constructor(private httpClient : HttpClient) { }
 
-  findAll(searchParams?: any): Observable<HttpResponse<Services[]>> {
+  findAll(searchParams?: any): Observable<HttpResponse<Services[]>> { //recherche les parametres de services.
     return this.httpClient.get<Services[]>(this.SERVER_URL, {params: searchParams, headers: this.httpHeaders, observe: 'response'});
   }
 }

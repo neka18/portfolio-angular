@@ -21,7 +21,7 @@ import { SERVER_LOCATION } from 'src/global';
   
     constructor(private httpClient : HttpClient) { }
    
-    create(messages: ContactMessage): Observable<HttpResponse<ContactMessage>> {
+    create(messages: ContactMessage): Observable<HttpResponse<ContactMessage>> { //recherche les params du formulaire de contact
       return this.httpClient.post<ContactMessage>(this.SERVER_URL, messages, {headers: this.httpHeaders, observe: 'response'});
     }
     

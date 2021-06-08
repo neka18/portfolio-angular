@@ -5,6 +5,7 @@
                 <div id="gridservices">
                     <ng-container  *ngFor= "let serv of service"> 
                     <div>
+                        <!-- boucle sur ng-container de toutes les infos concernant les services-->
                         <p> <a href="https://fr.wikipedia.org/wiki/{{serv.nom}}"><span class='titleServices'>{{serv.nom}}:</span></a><br><br>{{serv.description}}</p>
                     </div>
                     <div>

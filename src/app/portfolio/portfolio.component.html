@@ -6,7 +6,8 @@
     <section>
       <div class="containersection">
         <div id="gridportfolio">
-          <img *ngFor= "let rea of realisation" class="imagePortfolio" src="{{server}}{{rea.image}}" alt="{{rea.nom}}">
+          <!-- boucle sur la balise image des realisations dans le crud-->
+          <img *ngFor= "let rea of realisation" class="imagePortfolio" src="{{server}}{{rea.image}}" alt="{{rea.nom}}"> 
         </div>
         <p class="textportfolio">Voici ci-dessus différents types de travaux que j'ai eu à réaliser au cours de mon
           année scolaire. <br> Cela vous permettra de mieux vous rendre compte de ce que je peux faire.</p>
